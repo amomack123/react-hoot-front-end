@@ -1,16 +1,13 @@
-import { AuthedUserContext } from '../../App';
-import { useContext } from 'react';
+import React from 'react';
+import styles from './Dashboard.module.css'; // Create this CSS file for styling
+import Logo from '../../assets/images/logo.svg'; // Ensure the path to the owl icon is correct
 
-const Dashboard = ({}) => {
-  const user = useContext(AuthedUserContext);
+const Dashboard = ({ user }) => {
   return (
-    <main>
-      <h1>Welcome, {user.username}</h1>
-      <p>
-        This is the dashboard page where you, and only you, can see a dashboard
-        of all of your things.
-      </p>
-    </main>
+    <div className={styles.dashboard}>
+      <img src={Logo} alt="A cute owl" className={styles.owlIcon} />
+      <h1>Welcome, {user.username}!</h1>
+    </div>
   );
 };
 

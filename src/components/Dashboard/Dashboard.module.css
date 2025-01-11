@@ -1,0 +1,24 @@
+/* src/components/Dashboard/Dashboard.module.css */
+
+.dashboard {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .owlIcon {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 300px; /* Increased font size */
+    font-weight: bold;
+    margin-bottom: 20px; /* Increased margin for better spacing */
+  }
+  
+  p {
+    font-size: 50px;
+    color: #666;
+  }
+  
