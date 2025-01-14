@@ -36,13 +36,13 @@
 
   | Description               | Screenshot                                               |
   |:-------------------------:|----------------------------------------------------------|
-  | **Landing Page**          | ![Landing Page](./assets/Logo.png)                       |
-  | **Sign up Page**          | ![Landing Page](./assets/Signup.png)                     |
-  | **Sign in Page**          | ![Landing Page](./assets/Signin.png)                     |
-  | **Dashboard**             | ![Dashboard](./assets/Dashboard.png)                     |
-  | **List Page**             | ![Details](./assets/List.png)                            |
-  | **Form Page**             | ![Form](./assets/Form.png)                               |
-  | **Details Page**          | ![Details Page](./assets/Details.png)                    |
+  | **Landing Page**          | ![Landing Page](src/assets/Logo.png)                     |
+  | **Sign up Page**          | ![Landing Page](src/assets/Signup.png)                   |
+  | **Sign in Page**          | ![Landing Page](src/assets/Signin.png)                   |
+  | **Dashboard**             | ![Dashboard](src/assets/Dashboard.png)                   |
+  | **List Page**             | ![Details](src/assets/List.png)                          |
+  | **Form Page**             | ![Form](src/assets/Form.png)                             |
+  | **Details Page**          | ![Details Page](src/assets/Details.png)                  |
 </div>
 
 <div id="assets" align="center">
