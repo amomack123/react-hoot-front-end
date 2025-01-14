@@ -1,10 +1,10 @@
 <div id="header" align="center">
-  <img src="![Landing Page](src/assets/Logo.png)" \ width="800" height="400">
+  <img src="src/assets/Logo.png" width="800" height="400" alt="Landing Page">
 </div>
 
 <div id="description" align="center">
 
-  # Media Haven
+  # Hoot-Tweets
 
   ### [CLICK TO DEMO](https://hoot-tweet.netlify.app/hoots)
 
@@ -50,7 +50,7 @@
 ## :desktop_computer: Technologies Used
 ![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat&logo=mongodb)
 ![Express](https://img.shields.io/badge/-Express-05122A?style=flat&logo=express)
-![React](https://img.s hields.io/badge/-React-05122A?style=flat&logo=react)
+![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react)
 ![Node](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js)
 [JWT](https://img.shields.io/badge/-JSON_Web_Tokens-05122A?style=flat&logo=jsonwebtokens)
 ![CSS3](https://img.shields.io/badge/-CSS3-05122A?style=flat&logo=css3)
