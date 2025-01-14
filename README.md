@@ -69,51 +69,54 @@
 
 </div>
 
-<div id="filetree">
+<div id="Information">
 
-## :file_folder: File Structure
+## Additional Formation
 
 <details>
-  <summary>File Tree</summary>
+  <summary>How to get started to run this on your machine</summary>
+  <summary>Trello Board</summary>
+  :wrench: How to Run This Project Locally
 
-  ```plaintext
-  media-haven
-  ├─ .gitignore
-  ├─ Pipfile
-  ├─ README.md
-  ├─ main_app
-  │  ├─ __init__.py
-  │  ├─ admin.py
-  │  ├─ apps.py
-  │  ├─ forms.py
-  │  ├─ migrations
-  │  │  ├─ 0001_initial.py
-  │  │  ├─ 0002_alter_media_difficulty.py
-  │  │  └─ __init__.py
-  │  ├─ models.py
-  │  ├─ static
-  │  │  ├─ css
-  │  │  │  └─ styles.css
-  │  │  └─ images
-  │  ├─ templates
-  │  │  ├─ about.html
-  │  │  ├─ base.html
-  │  │  ├─ dashboard.html
-  │  │  ├─ home.html
-  │  │  └─ media
-  │  │     ├─ media_detail.html
-  │  │     ├─ media_form.html
-  │  │     └─ media_index.html
-  │  ├─ tests.py
-  │  ├─ urls.py
-  │  └─ views.py
-  ├─ manage.py
-  └─ mediahaven
-    ├─ __init__.py
-    ├─ asgi.py
-    ├─ settings.py
-    ├─ urls.py
-    └─ wsgi.py
-  ```
+Prerequisites
+
+Node.js installed on your machine
+
+MongoDB installed and running locally or a connection URI for a hosted MongoDB instance
+
+Backend Setup
+
+Clone the backend repository: git clone <https://github.com/amomack123/express-api-hoot-back-end>
+
+Navigate to the backend directory: cd backend
+
+Install dependencies: npm install
+
+Set up your environment variables in a .env file:
+MONGO_URI=your_mongo_connection_uri
+JWT_SECRET=your_jwt_secret
+
+Start the backend server: npm start
+
+Frontend Setup
+
+Clone the frontend repository: https://github.com/amomack123/react-hoot-front-end
+
+Navigate to the frontend directory: cd frontend
+
+Install dependencies: npm install
+
+VITE_EXPRESS_BACKEND_URL=http://localhost:5000
+
+Start the development server: npm run dev
+
+The frontend will run on http://localhost:3000 by default.
+
+Access the App
+
+Open your browser and navigate to http://localhost:3000 to view the frontend.
+
+Ensure the backend is running to handle API requests.
+
 </details>
 </div>
