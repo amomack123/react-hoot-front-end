@@ -1,5 +1,5 @@
 <div id="header" align="center">
-  <img src="![App Logo](src/assets/Logo.png)" width="800" height="400">
+  <img src="![Landing Page](src/assets/Logo.png)" \ width="800" height="400">
 </div>
 
 <div id="description" align="center">
