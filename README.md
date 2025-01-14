@@ -75,7 +75,6 @@
 
 <details>
   <summary>How to get started to run this on your machine</summary>
-  <summary>Trello Board</summary>
   :wrench: How to Run This Project Locally
 
 Prerequisites
@@ -117,6 +116,11 @@ Access the App
 Open your browser and navigate to http://localhost:3000 to view the frontend.
 
 Ensure the backend is running to handle API requests.
-
+</details>
+<details open>
+  <summary>Planning</summary>
+  <a href="https://trello.com/b/1YuO2Xzz/hoot">Hoot-Tweet Trello Board</a>
+  <br>
+  <a href="https://trello.com/b/1YuO2Xzz/hoot">Click here to see the Hoot Trello Board</a>
 </details>
 </div>
