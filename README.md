@@ -51,7 +51,6 @@
 ![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat&logo=mongodb)
 ![Express](https://img.shields.io/badge/-Express-05122A?style=flat&logo=express)
 ![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react)
-![Node](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js)
 [JWT](https://img.shields.io/badge/-JSON_Web_Tokens-05122A?style=flat&logo=jsonwebtokens)
 ![CSS3](https://img.shields.io/badge/-CSS3-05122A?style=flat&logo=css3)
 ![Heroku](https://img.shields.io/badge/-Heroku-05122A?style=flat&logo=heroku)
@@ -60,6 +59,7 @@
 ![VSCode](https://img.shields.io/badge/-VS_Code-05122A?style=flat&logo=visualstudio)
 ![Trello](https://img.shields.io/badge/-Trello-05122A?style=flat&logo=trello)
 ![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat&logo=markdown)
+![Node](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js)
 
 ## :satellite: Future Goals
 
