@@ -25,7 +25,7 @@
 
 <details open>
   <summary> Planning </summary>
-  <a href="https://trello.com/b/P1GoQ4cb/media-haven">https://trello.com/b/P1GoQ4cb/media-haven</a>
+  <a href="https://trello.com/b/1YuO2Xzz/hoot">Click to see my trello</a>
 </details>
 
 </div>
@@ -116,9 +116,5 @@ Access the App
 Open your browser and navigate to http://localhost:3000 to view the frontend.
 
 Ensure the backend is running to handle API requests.
-</details>
-<details open>
-  <summary>Planning</summary>
-  <a href="https://trello.com/b/1YuO2Xzz/hoot">Click here to see the Hoot Trello Board</a>
 </details>
 </div>
