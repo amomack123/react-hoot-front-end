@@ -1,33 +1,43 @@
-.container input, 
-.container textarea, 
-.container select, 
-.container button { 
-    width: 100%;
-    padding: 1px;
-    font-size: 12px;
-    resize: vertical; /* This is for the textarea only */
-    border-radius: 5px;
-    margin: 7px 0px 14px 0px;
-    border: 1px solid var(--border);
-    background-color: white; /* Ensure input fields match dropdown background */
-    color: black; /* Match the dropdown text color */
-    appearance: none; /* Remove native styling differences (like for select) */
-    -moz-appearance: none; /* For Firefox */
-    -webkit-appearance: none; /* For Safari and Chrome */
+.container {
+  height: 100%;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 28px 21px;
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  flex-direction: column;
+  gap: 14px;
 }
 
-.container input, 
-.container textarea { 
-    height: 30px; /* Match the height of the dropdown */
-    display: flex;
-    align-items: center; /* Align text vertically */
-    text-align: start; /* Ensure input text alignment matches */
+.container input,
+.container textarea,
+.container select,
+.container button {
+  width: 100%; /* Keeps full-width for all fields */
+  padding: 1px;
+  font-size: 12px;
+  resize: vertical; /* Allow resizing for textarea */
+  border-radius: 5px;
+  margin: 7px 0px 14px 0px;
+  border: 1px solid var(--border);
+  background-color: white; /* Keep consistent background color */
+  color: black;
 }
 
 .container textarea {
-    min-height: 30px; /* Set a base height but allow resizing */
+  min-height: 50px; /* Default size for the textarea */
 }
 
-.container select {
-    cursor: pointer; /* Add pointer cursor for dropdown consistency */
+.container label {
+  font-weight: 600;
+  margin: 7px 0px 14px 0px;
+  text-align: center; /* Center-align labels */
+}
+
+.container button {
+  color: white;
+  font-weight: 600;
+  margin: 21px 0px 0px 0px;
+  background: var(--primary);
 }
