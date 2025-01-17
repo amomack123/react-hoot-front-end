@@ -39,6 +39,7 @@
 
 .container textarea {
   min-height: 100px;
+  margin-bottom: 10 px;
 }
 
 .container label {
@@ -46,7 +47,6 @@
   font-size: 16px;
   display: block;
   margin-bottom: 10px;
-  margin-top: 10 px;
 }
 
 .container button {
