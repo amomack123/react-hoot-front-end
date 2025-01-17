@@ -3,24 +3,24 @@
   display: flex;
   overflow-x: hidden;
   overflow-y: scroll;
-  padding: 28px 21px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 14px;
 }
 
 .container form {
   width: 100%;
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
+  max-width: 500px;
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .container h1 {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-size: 24px;
-  text-align: left;
+  font-weight: bold;
 }
 
 .container input,
@@ -32,8 +32,8 @@
   font-size: 14px;
   resize: vertical;
   border-radius: 5px;
-  margin: 0 0 20px 0;
-  border: 1px solid var(--border);
+  margin: 8px 0 20px 0;
+  border: 1px solid #e0e0e0;
   background-color: white;
   color: black;
 }
@@ -44,8 +44,7 @@
 
 .container label {
   font-weight: 600;
-  margin-bottom: 8px;
-  text-align: left;
+  font-size: 16px;
   display: block;
 }
 
@@ -53,12 +52,13 @@
   color: white;
   font-weight: 600;
   margin-top: 10px;
-  background: var(--primary);
+  background: #3b9dff;
   font-size: 14px;
   padding: 12px;
   cursor: pointer;
+  border: none;
 }
 
 .container button:hover {
-  opacity: 0.9;
+  background: #2d8bea;
 }
