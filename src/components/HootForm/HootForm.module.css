@@ -4,50 +4,61 @@
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 28px 21px;
-  align-items: center; /* Centers fields vertically */
-  justify-content: center; /* Centers fields horizontally */
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 14px;
 }
 
+.container form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
 .container h1 {
-  margin-bottom: 20px; /* Add spacing below the title */
-  margin-top: -20px; /* Pull the title slightly higher on the page */
-  font-size: 24px; /* Increase title font size for emphasis */
-  text-align: center; /* Center title horizontally */
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: left;
 }
 
 .container input,
 .container textarea,
 .container select,
 .container button {
-  width: 300px; /* Set a fixed width for consistency */
-  padding: 16px; /* Increase padding for larger fields */
-  font-size: 14px; /* Increase font size for better readability */
-  resize: vertical; /* Keep textarea resizable vertically */
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  resize: vertical;
   border-radius: 5px;
-  margin: 10px 0px 20px 0px; /* Adjust spacing between fields */
+  margin: 0 0 20px 0;
   border: 1px solid var(--border);
-  background-color: white; /* Keep consistent background color */
+  background-color: white;
   color: black;
 }
 
 .container textarea {
-  min-height: 100px; /* Increase height for textarea */
+  min-height: 100px;
 }
 
 .container label {
   font-weight: 600;
-  margin: 7px 0px 14px 0px;
-  text-align: center; /* Center-align labels */
+  margin-bottom: 8px;
+  text-align: left;
+  display: block;
 }
 
 .container button {
   color: white;
   font-weight: 600;
-  margin: 21px 0px 0px 0px;
+  margin-top: 10px;
   background: var(--primary);
-  font-size: 14px; /* Make button font size consistent */
-  padding: 12px; /* Add padding for a larger button */
-  width: 300px; /* Match button width with fields */
+  font-size: 14px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.container button:hover {
+  opacity: 0.9;
 }
