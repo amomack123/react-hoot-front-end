@@ -55,23 +55,23 @@ const HootDetails = (props) => {
     return (
         <main className={styles.container}>
             <section>
-                <header>
-                    <p>{hoot.category.toUpperCase()}</p>
-                    <h1>{hoot.title}</h1>
-                    <AuthorInfo content={hoot} />
-                    {hoot.author._id === user._id && (
-                        <>
-                            <Link to={`/hoots/${hootId}/edit`}>
-                                <Icon category="Edit" />
-                            </Link>
-                            <button onClick={() => props.handleDeleteHoot(hootId)}>
-                                <Icon category="Trash" />
-                            </button>
-                        </>
-                    )}
-                </header>
-                <p>{hoot.text}</p>
-            </section>
+      <header>
+        <p>{hoot.category.toUpperCase()}</p>
+        <h1>{hoot.title}</h1>
+        <AuthorInfo content={hoot} />
+        {hoot.author._id === user._id && (
+          <div className="actions">
+            <Link to={`/hoots/${hootId}/edit`} className="action-button">
+              <Icon category="Edit" />
+            </Link>
+            <button onClick={() => props.handleDeleteHoot(hootId)} className="action-button">
+              <Icon category="Trash" />
+            </button>
+          </div>
+        )}
+      </header>
+      <p>{hoot.text}</p>
+    </section>
             <section>
                 <h2>Comments</h2>
                 <CommentForm mode="add" onSubmit={handleAddComment} />
