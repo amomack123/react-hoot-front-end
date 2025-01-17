@@ -1,101 +1,130 @@
+/* Container Styling */
 .container {
-    height: 100%;
-    display: flex;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px; /* Added gap for spacing */
+  box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+}
+
+/* Paragraph Styling */
+.container p {
+  margin: 0;
+  padding: 0px 0 10px;
+}
+
+/* Image Styling */
+.container img {
+  width: 65%;
+  max-width: 500px;
+  object-fit: contain; /* Keeps image properly scaled */
+}
+
+/* Section Styling */
+.container section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  padding: 28px 21px;
+  align-items: center;
+  flex-direction: column;
+  gap: 14px; /* Use gap for consistent spacing */
+  box-sizing: border-box; /* Prevent overflow from padding */
+}
+
+.container section:first-child {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdfeff;
+}
+
+.container section:nth-child(2) {
+  overflow-y: auto; /* Enables vertical scrolling */
+  justify-content: center;
+}
+
+/* Input and Button Styling */
+.container input {
+  margin: 7px 0 14px 0;
+}
+
+.container input,
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
+  box-sizing: border-box; /* Prevent padding overflow */
+}
+
+/* Div Styling */
+.container div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Replace margin with gap */
+}
+
+/* Label Styling */
+.container label {
+  font-weight: 600;
+  margin: 7px 0 14px 0;
+}
+
+/* Button Styling */
+.container button {
+  color: white;
+  font-weight: 600;
+  background: #00a0df;
+  margin: 21px 0 0 0;
+}
+
+/* Anchor Styling */
+.container a {
+  border: none;
+  font-size: 14px;
+  background: none;
+  font-weight: 500;
+  margin-top: 14px;
+  text-align: center;
+  color: rgb(200, 200, 200);
+}
+
+/* Input Focus Styling */
+input:focus {
+  outline: none;
+  border: 1px solid #00a0df;
+}
+
+/* Media Query: Max Width */
+@media only screen and (max-width: 912px) {
+  .container {
+    flex-direction: column; /* Stack sections for smaller screens */
   }
-  
-  .container p {
-    margin: 0;
-    padding: 0px 0 10px;
-  }
-  
-  .container img {
-    width: 65%;
-    max-width: 500px;
-  }
-  
   .container section {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    padding: 28px 21px;
-    align-items: center;
-    flex-direction: column;
+    width: 100%;
+    padding: 14px; /* Reduce padding for smaller screens */
   }
-  
   .container section:first-child {
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    background-color: #fdfeff;
+    display: none;
   }
-  
+  .container form {
+    width: 100%;
+  }
+}
+
+/* Media Query: Max Height */
+@media only screen and (max-height: 900px) {
   .container section:nth-child(2) {
-    overflow: scroll;
-    justify-content: center;
+    justify-content: flex-start;
   }
-  
-  .container input {
-    margin: 7px 0px 14px 0px;
-  }
-  
-  .container input,
-  button {
-    width: 100%;
-    padding: 14px;
-    font-size: 14px;
-    border-radius: 5px;
-    border: 1px solid rgb(220, 220, 220);
-  }
-  
-  .container div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .container label {
-    font-weight: 600;
-    margin: 7px 0px 14px 0px;
-  }
-  
-  .container button {
-    color: white;
-    font-weight: 600;
-    background: #00a0df;
-    margin: 21px 0px 0px 0px;
-  }
-  
-  .container a {
-    border: none;
-    font-size: 14px;
-    background: none;
-    font-weight: 500;
-    margin-top: 14px;
-    text-align: center;
-    color: rgb(200, 200, 200);
-  }
-  
-  input:focus {
-    outline: none;
-    border: 1px solid #00a0df;
-  }
-  
-  @media only screen and (max-width: 912px) {
-    .container section {
-      width: 100%;
-    }
-    .container section:first-child {
-      display: none;
-    }
-    .container form {
-      min-width: 100%;
-    }
-  }
-  
-  @media only screen and (max-height: 900px) {
-    .container section:nth-child(2) {
-      justify-content: flex-start;
-    }
-  }
-  
+}
+
+/* Horizontal Overflow Prevention */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
