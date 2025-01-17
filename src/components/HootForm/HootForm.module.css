@@ -1,50 +1,33 @@
-.container {
-  height: 100%;
-  display: flex;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  padding: 28px 21px;
-  align-items: center;
-  flex-direction: column;
-  gap: 14px;
+.container input, 
+.container textarea, 
+.container select, 
+.container button { 
+    width: 100%;
+    padding: 1px;
+    font-size: 12px;
+    resize: vertical; /* This is for the textarea only */
+    border-radius: 5px;
+    margin: 7px 0px 14px 0px;
+    border: 1px solid var(--border);
+    background-color: white; /* Ensure input fields match dropdown background */
+    color: black; /* Match the dropdown text color */
+    appearance: none; /* Remove native styling differences (like for select) */
+    -moz-appearance: none; /* For Firefox */
+    -webkit-appearance: none; /* For Safari and Chrome */
 }
 
-.container input,
-.container textarea,
-.container select,
-.container button {
-  width: 100%; /* Center by reducing width */
-  padding: 10px;
-  font-size: 12px;
-  resize: vertical;
-  border-radius: 5px;
-  margin: 7px 0px 14px 0px;
-  border: 1px solid var(--border);
-}
-
-.container select {
-  width: 100%; /* Make category smaller */
+.container input, 
+.container textarea { 
+    height: 30px; /* Match the height of the dropdown */
+    display: flex;
+    align-items: center; /* Align text vertically */
+    text-align: start; /* Ensure input text alignment matches */
 }
 
 .container textarea {
-  min-height: 50px;
+    min-height: 30px; /* Set a base height but allow resizing */
 }
 
-.container label {
-  font-weight: 600;
-  margin: 7px 0px 14px 0px;
-}
-
-.container button {
-  color: white;
-  font-weight: 600;
-  margin: 21px 0px 0px 0px;
-  background: var(--primary);
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-  border: 1px solid var(--primary);
+.container select {
+    cursor: pointer; /* Add pointer cursor for dropdown consistency */
 }
