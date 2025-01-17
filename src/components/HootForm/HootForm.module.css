@@ -4,29 +4,35 @@
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 28px 21px;
-  align-items: center; /* Centers content vertically */
-  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers fields vertically */
+  justify-content: center; /* Centers fields horizontally */
   flex-direction: column;
   gap: 14px;
+}
+
+.container h1 {
+  margin-bottom: 20px; /* Add spacing below the title */
+  margin-top: -20px; /* Pull the title slightly higher on the page */
+  font-size: 24px; /* Increase title font size for emphasis */
 }
 
 .container input,
 .container textarea,
 .container select,
 .container button {
-  width: 100%; /* Keeps full-width for all fields */
-  padding: 1px;
-  font-size: 12px;
-  resize: vertical; /* Allow resizing for textarea */
+  width: 100%; /* Keep fields full width */
+  padding: 10px; /* Increase padding for larger fields */
+  font-size: 14px; /* Increase font size for better readability */
+  resize: vertical; /* Keep textarea resizable vertically */
   border-radius: 5px;
-  margin: 7px 0px 14px 0px;
+  margin: 10px 0px 20px 0px; /* Adjust spacing between fields */
   border: 1px solid var(--border);
   background-color: white; /* Keep consistent background color */
   color: black;
 }
 
 .container textarea {
-  min-height: 50px; /* Default size for the textarea */
+  min-height: 100px; /* Increase height for textarea */
 }
 
 .container label {
@@ -40,4 +46,6 @@
   font-weight: 600;
   margin: 21px 0px 0px 0px;
   background: var(--primary);
+  font-size: 14px; /* Make button font size consistent */
+  padding: 12px; /* Add padding for a larger button */
 }
