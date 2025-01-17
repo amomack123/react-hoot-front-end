@@ -9,12 +9,13 @@
 }
 
 .container form {
-  width: 100%;
   max-width: 500px;
   background: white;
   border-radius: 8px;
   padding: 24px;
+  padding-left: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
 }
 
 .container h1 {
@@ -27,8 +28,7 @@
 .container textarea,
 .container select,
 .container button {
-  width: 100%;
-  padding: 12px;
+  padding: 10px;
   font-size: 14px;
   resize: vertical;
   border-radius: 5px;
