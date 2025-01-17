@@ -4,45 +4,47 @@
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 28px 21px;
-  align-items: center; /* Centers content horizontally */
-  justify-content: center; /* Centers content vertically */
+  align-items: center;
   flex-direction: column;
   gap: 14px;
 }
-  
-  .container input, textarea, select, button { 
-    width: 100%;
-    padding: 10px;
-    font-size: 12px;
-    resize: vertical;
-    border-radius: 5px;
-    margin: 7px 0px 14px 0px;
-    border: 1px solid var(--border);
-  }
-  
-  .container textarea {
-    min-height: 50px;
-  }
-  
-  .container label {
-    font-weight: 600;
-    margin: 7px 0px 14px 0px;
-  }
-  
-  .container button {
-    color: white;
-    font-weight: 600;
-    margin: 21px 0px 0px 0px;
-    background: var(--primary);
-  }
 
-  .container > form {
-    width: 100%;
-    max-width: 400px; /* Restricts the width of the form */
+.container input,
+.container textarea,
+.container select,
+.container button {
+  width: 70%; /* Center by reducing width */
+  padding: 10px;
+  font-size: 12px;
+  resize: vertical;
+  border-radius: 5px;
+  margin: 7px 0px 14px 0px;
+  border: 1px solid var(--border);
 }
-  
-  input:focus, select:focus, textarea:focus {
-    outline: none;
-    border: 1px solid var(--primary);
-  }
-  
+
+.container select {
+  width: 50%; /* Make category smaller */
+}
+
+.container textarea {
+  min-height: 50px;
+}
+
+.container label {
+  font-weight: 600;
+  margin: 7px 0px 14px 0px;
+}
+
+.container button {
+  color: white;
+  font-weight: 600;
+  margin: 21px 0px 0px 0px;
+  background: var(--primary);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid var(--primary);
+}
