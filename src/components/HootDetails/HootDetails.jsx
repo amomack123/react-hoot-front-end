@@ -110,6 +110,7 @@ import styles from './HootDetails.module.css';
 import Loading from '../Loading/Loading';
 import Icon from '../Icon/Icon';
 import AuthorInfo from '../../components/AuthorInfo/AuthorInfo';
+import CommentForm from "../CommentForm/CommentForm";
 
 const HootDetails = (props) => {
     const { hootId } = useParams();
