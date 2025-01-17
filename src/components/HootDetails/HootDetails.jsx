@@ -105,12 +105,12 @@
 
 import { useState, useEffect, useContext } from "react";
 import { useParams, Link } from "react-router-dom";
+import CommentForm from "../CommentForm/CommentForm";
 import { AuthedUserContext } from "../../App";
 import styles from './HootDetails.module.css';
 import Loading from '../Loading/Loading';
 import Icon from '../Icon/Icon';
 import AuthorInfo from '../../components/AuthorInfo/AuthorInfo';
-import CommentForm from "../CommentForm/CommentForm";
 
 const HootDetails = (props) => {
     const { hootId } = useParams();
@@ -127,6 +127,40 @@ const HootDetails = (props) => {
 
     if (!hoot) return <Loading />
 
+    const handleAddComment = async (commentFormData) => {
+        try {
+            const newComment = await props.hootService.createComment(hootId, commentFormData);
+            setHoot((prevHoot) => ({
+                ...prevHoot,
+                comments: [newComment, ...prevHoot.comments],
+            }));
+        } catch (error) {
+            console.error("Error adding comment:", error);
+        }
+    };
+
+    const handleDeleteComment = async (commentId) => {
+        try {
+            await props.hootService.deleteComment(hootId, commentId);
+            setHoot((prevHoot) => ({
+                ...prevHoot,
+                comments: prevHoot.comments.filter((comment) => comment._id !== commentId),
+            }));
+        } catch (error) {
+            console.error("Error deleting comment:", error);
+        }
+    };
+
+    const handleDeleteHoot = async () => {
+        try {
+            await props.hootService.deleteHoot(hootId);
+            // Navigate to another page, e.g., "/hoots" after deleting
+            props.navigate('/hoots');
+        } catch (error) {
+            console.error("Error deleting hoot:", error);
+        }
+    };
+
     return (
         <main className={styles.container}>
             <section>
@@ -139,7 +173,7 @@ const HootDetails = (props) => {
                             <Link to={`/hoots/${hootId}/edit`} className="action-button">
                                 <Icon category="Edit" />
                             </Link>
-                            <button onClick={() => props.hootService.deleteHoot(hootId)} className="action-button">
+                            <button onClick={handleDeleteHoot} className="action-button">
                                 <Icon category="Trash" />
                             </button>
                         </div>
@@ -147,9 +181,10 @@ const HootDetails = (props) => {
                 </header>
                 <p>{hoot.text}</p>
             </section>
+
             <section>
                 <h2>Comments</h2>
-                <CommentForm mode="add" onSubmit={(commentFormData) => props.hootService.createComment(hootId, commentFormData)} />
+                <CommentForm mode="add" onSubmit={handleAddComment} />
                 {!hoot.comments.length && <p>There are no comments.</p>}
 
                 {hoot.comments.map((comment) => (
@@ -158,7 +193,7 @@ const HootDetails = (props) => {
                             <AuthorInfo content={comment} />
                             {comment.author._id === user._id && (
                                 <>
-                                    <button onClick={() => props.hootService.deleteComment(hootId, comment._id)}>
+                                    <button onClick={() => handleDeleteComment(comment._id)}>
                                         <Icon category="Trash" />
                                     </button>
                                 </>
