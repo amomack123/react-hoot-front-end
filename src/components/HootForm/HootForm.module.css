@@ -21,7 +21,7 @@
 .container select,
 .container button {
   width: 100%; /* Keep fields full width */
-  padding: 10px; /* Increase padding for larger fields */
+  padding: 16px; /* Increase padding for larger fields */
   font-size: 14px; /* Increase font size for better readability */
   resize: vertical; /* Keep textarea resizable vertically */
   border-radius: 5px;
