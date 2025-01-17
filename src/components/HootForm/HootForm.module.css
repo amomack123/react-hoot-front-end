@@ -1,15 +1,14 @@
 .container {
-    height: 100%;
-    display: flex;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    padding: 28px 21px;
-    align-items: center;
-    flex-direction: column;
-    gap: 14px;
-  }
-
-  
+  height: 100%;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 28px 21px;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  flex-direction: column;
+  gap: 14px;
+}
   
   .container input, textarea, select, button { 
     width: 100%;
@@ -36,8 +35,14 @@
     margin: 21px 0px 0px 0px;
     background: var(--primary);
   }
+
+  .container > form {
+    width: 100%;
+    max-width: 400px; /* Restricts the width of the form */
+}
   
   input:focus, select:focus, textarea:focus {
     outline: none;
     border: 1px solid var(--primary);
   }
+  
