@@ -57,8 +57,8 @@ const App = () => {
           {user ? (
             <>
               <Route path = "/" element={<Dashboard user={user} />} />
-              <Route path = "/hoots" element={<HootList hoots={hoots} />} />
-              <Route path="/hoots/:hootId" element={<HootDetails handleDeleteHoot={handleDeleteHoot} />} />
+              <Route path="/hoots" element={<HootList hoots={hoots} hootService={hootService} />} />
+              <Route path="/hoots/:hootId" element={<HootDetails handleDeleteHoot={handleDeleteHoot} hootService={hootService} />} />
               <Route path="/hoots/new" element={<HootForm handleAddHoot={handleAddHoot} />} />
               <Route path="/hoots/:hootId/edit" element={<HootForm handleUpdateHoot={handleUpdateHoot} />} />
               <Route path="/" element={<Landing />} />
