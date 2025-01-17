@@ -13,7 +13,7 @@
 .container textarea,
 .container select,
 .container button {
-  width: 70%; /* Center by reducing width */
+  width: 100%; /* Center by reducing width */
   padding: 10px;
   font-size: 12px;
   resize: vertical;
@@ -23,7 +23,7 @@
 }
 
 .container select {
-  width: 50%; /* Make category smaller */
+  width: 100%; /* Make category smaller */
 }
 
 .container textarea {
